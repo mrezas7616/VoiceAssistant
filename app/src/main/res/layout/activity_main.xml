@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textTv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="دکمه رو فشار بده تا شروع به ظبط کنم "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btncopy"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:text="رونوشت"/>
+        <Button
+                android:id="@+id/btnsend"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ارسال"/>
+
+    </LinearLayout>
+    <ImageButton
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@null"/>
+
+</LinearLayout>
